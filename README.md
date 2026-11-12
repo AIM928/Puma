@@ -1,39 +1,49 @@
-# Puma
+# Puma 0.6.72
 
-An independent Puma infantry fighting vehicle MOD for **Gunner, HEAT, PC!**
+An independent Puma infantry fighting vehicle MOD for Gunner, HEAT, PC!
 
-## Download
+## Download and install
 
-Get the **Full ZIP** from [Releases](https://github.com/AIM928/Puma/releases/latest). The automatic Source code archive is not the install package.
+Get **Puma-0.6.72-Full.zip** from https://github.com/AIM928/Puma/releases/latest .
+This is the complete runtime package. Do not download GitHub's automatically generated Source code archive to install the MOD.
 
-## Installation
+1. Install GHPC and MelonLoader. This package was built against the locally installed GHPC build and MelonLoader 0.7.3.
+2. Close GHPC, then extract the ZIP into the game's **Bin** directory. Merge its **Mods** folder with the existing one. Keep both **PumaVJTF.dll** and **PumaVJTFAssets** together; these internal filenames are retained for upgrade compatibility.
+3. Start the game and enter the main menu. On a new installation, the Chinese-left / English-right quick-start panel appears automatically. Select **Got it** to dismiss it permanently for that installation.
+4. Select **Puma** in the mission customizer. Restart GHPC after updating the MOD.
 
-1. Install GHPC and MelonLoader, then close the game.
-2. Extract the Full ZIP into **GHPC/Bin**, merging the included **Mods** folder. Keep **PumaVJTF.dll** and **PumaVJTFAssets** together; these internal names are retained for upgrade compatibility.
-3. Start GHPC and enter the main menu. First-time users automatically see the quick-start guide, with **Chinese on the left and English on the right**. Click **Got it** to dismiss it.
-4. Select **Puma** in the mission customizer. Restart GHPC after updates.
+## Quick controls
 
-## Controls
+- Middle mouse: lock a target; press again to unlock. Backspace: clear lock.
+- Hold right mouse to fine-adjust while locked.
+- Q menu: autocannon rate, laser rangefinder and Spike TV mode.
+- Thermal imaging, magnification and view switching use the game's configured bindings.
 
-- **Middle mouse:** lock; press again to unlock. **Backspace:** clear lock.
-- Hold **right mouse** to fine-adjust while locked.
-- **Q menu:** autocannon rate, laser rangefinder and Spike TV mode.
-- Thermal imaging, magnification and view switching use the game bindings.
+## Included
 
-## Features
+- 30 mm autocannon, DM33 / DM21 ammunition and selectable firing rates.
+- Spike missiles, target tracking and TV mode.
+- Independently rotating infrared countermeasures and laser warning display.
+- ERA protection with spent-module appearance and X-ray displays.
+- Updated AI search and missile use, a two-second minimum missile launch interval, and same-target in-flight reservation.
+- Commander exterior view adjustment, original track finish and recent display/update optimizations.
 
-30 mm autocannon, Spike missiles and TV mode, rotating infrared countermeasures, laser warning, ERA with spent-module appearance, X-ray displays, updated AI search and missile use, and recent display/update optimizations.
+The introduction recommends the **LATEST VERSION of our M1 Trophy MOD** and links to its permanent project homepage: https://github.com/AIM928/M1-Trophy . M1 Trophy is optional, not a dependency.
 
-The introduction recommends the **LATEST VERSION** of our [M1 Trophy MOD](https://github.com/AIM928/M1-Trophy). It is optional, not a dependency.
+## First-run panel
 
-## First-run guide
+The download does not contain any UserData, acknowledgement marker, personal settings, logs or caches. A first-time user will therefore have no saved acknowledgement and will see the panel when the main menu is ready and the game has focus.
+After Got it is clicked, the acknowledgement is saved under **Bin/UserData/PumaVJTF/welcome-v1.seen**. Existing users who already acknowledged it will not see it again. The MOD does not reset this choice on every update.
 
-The Full ZIP includes **no UserData, acknowledgement marker, personal settings, logs or caches**. New users see the guide when the main menu is ready and GHPC has focus. After clicking Got it, the choice is stored at **Bin/UserData/PumaVJTF/welcome-v1.seen**. Existing users who already acknowledged it will not see it again.
-
-首次安装进入主菜单会自动显示左中文、右英文的操作介绍；点击“开始使用”后不再自动弹出。升级保留已有的确认记录。
+首次安装进入主菜单会显示左中文、右英文的介绍页；点击“开始使用”后不再自动弹出。升级不会清除已有的确认记录。
 
 ## Validation
 
-Package integrity and native-game regressions are checked in an isolated Unity environment. These checks are not a measurement of game FPS; mission-specific compatibility and frame-time gains depend on the game and other installed MODs.
+The release package is checked for required runtime assets, first-run acknowledgement behavior, bilingual layout, camera offset, warning updates and existing native-game regressions in an isolated Unity environment. These checks are not a measurement of in-game FPS; mission-specific compatibility and frame-time gains still depend on the game and other installed MODs.
 
-Unofficial community MOD, not affiliated with the game developers. MelonLoader, base-game files and unrelated MODs are not bundled.
+Unofficial community MOD; not affiliated with the game developers. No base-game executable, MelonLoader distribution, unrelated MOD or personal data is included.
+
+## Credits
+
+Retopologized War Thunder vehicle model and original textures: **Gaijin Entertainment**.
+GHPC integration and tuning: AIM. Unofficial fan mod; original assets remain the property of their respective owners.
